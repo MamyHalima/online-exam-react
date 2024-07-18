@@ -1,0 +1,72 @@
+/* src/Components/Navigation.css */
+.navigation {
+    position: relative;
+    background-color: #334d5271; /* Background color to ensure visibility */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(49, 132, 170); /* Ensure the icon is white */
+    display: flow-root;/* Ensure the icon is block-level to take up space */
+  }
+  
+  .nav-links {
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .nav-links.open {
+    display: flex;
+    flex-direction: column; /* Badilisha direction kuwa column */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .nav-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .nav-links li {
+    width: 100%;
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    background-color: #575757;
+  }
+  
+  /* For larger screens, keep the nav-links visible */
+  @media (min-width: 768px) {
+    .menu-icon {
+      display: none;
+    }
+    .nav-links {
+      display: flex;
+      position: static;
+      flex-direction: row;
+      background-color: transparent;
+    }
+    .nav-links a {
+      padding: 10px 15px;
+    }
+  }
+  

@@ -1,0 +1,111 @@
+/* src/Components/Login/LoginSignup.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../Asset/Background.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  form {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .underline {
+    height: 2px;
+    background-color: #4CAF50;
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+  
+  .inputs {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .input img {
+    margin-right: 10px;
+    width: 20px;
+    height: auto;
+  }
+  
+  .input input {
+    width: calc(100% - 40px); /* Adjust width considering the size of the icon */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .submitcontainer {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 100%;
+  }
+  
+  .submit:hover {
+    background-color: #45a049;
+  }
+  
+  .toggle-action {
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .toggle-action span {
+    color: #4CAF50;
+    text-decoration: underline;
+  }
+  
+  .toggle-action span:hover {
+    color: #388E3C;
+  }
+  
